@@ -5,7 +5,7 @@ import word from '../../public/Word1.png';
 const Page = ({ match }) => {
     useEffect(() => {
         if (match.params.id) {
-            localStorage.setItem('page' + match.params.id, true);
+            localStorage.setItem('page' + match.params.id, 1);
             console.log(match.params.id);
         }
     });
